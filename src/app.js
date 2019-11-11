@@ -45,7 +45,7 @@ if (['development', 'staging', 'testing'].includes(process.env.NODE_ENV)) {
   const config = require('../web-app/webpack.config');
   const compiler = webpack(config);
 
-  app.use(webpackDevMiddleware(compiler));x
+  app.use(webpackDevMiddleware(compiler));
   app.use(hotMiddleware(compiler, { log: console.log }));
 } else {
   // Make static web app files accessible
