@@ -62,5 +62,4 @@ app.use((err, req, res, _) => {
   res.json(req.app.get('env') === 'development' ? err : { message : err.message });
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => logger.info('Started listening on port ' + port));
+module.exports = app;
