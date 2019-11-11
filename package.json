@@ -5,8 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "prepare": "node bin/init-env",
-    "postinstall": "npm --prefix web-app install",
-    "build": "npm --prefix web-app run build",
+    "build": "npm --prefix web-app ci && npm --prefix web-app run build",
     "test": "echo \"No tests run.\"",
     "start": "node bin/www",
     "start-dev": "nodemon bin/www"
