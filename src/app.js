@@ -47,9 +47,6 @@ if (['development', 'staging', 'testing'].includes(process.env.NODE_ENV)) {
 
   app.use(webpackDevMiddleware(compiler));
   app.use(hotMiddleware(compiler, { log: console.log }));
-} else {
-  // Make static web app files accessible
-  app.use(express.static(path.join('.', 'web-app','dist')));
 }
 
 // 404 handler
