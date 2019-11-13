@@ -54,7 +54,7 @@ app.use((req, res, next) => next({ message: 'Not found', status: 404 }));
 
 // Error handler
 app.use((err, req, res, _) => {
-  logger.error('Error in request: ' + err + err.stack);
+  logger.error('Error in request: ' + JSON.stringify(err) + (err.stack || null));
   res.status(err.status || 500);
   res.json(req.app.get('env') === 'development' ? err : { message : err.message });
 });
