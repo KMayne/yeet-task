@@ -5,7 +5,6 @@ const dotenv = require('dotenv');
 const fileSync = require('lowdb/adapters/FileSync');
 const history = require('connect-history-api-fallback');
 const low = require('lowdb');
-const path = require('path');
 const winston = require('winston');
 
 const apiRouter = require('./api-router');
