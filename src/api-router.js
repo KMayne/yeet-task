@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({
-    todo: 'Redirect to API docs'
+    todo: 'Redirect to API docs :)'
   });
 });
 
