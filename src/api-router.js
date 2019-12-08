@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   res.json({
-    greetings: 'Hello, world'
+    todo: 'Redirect to API docs'
   });
 });
 
